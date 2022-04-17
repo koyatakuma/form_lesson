@@ -30,6 +30,99 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
+            <div class="name-box">
+              <div class="name">
+                <p>
+                  名字
+                  <span class="asterisk">※</span>
+                </p>
+                <input type="text" id="last-name" name="last-name" class="input-area" required>
+              </div>
+              <div class="name">
+                <p>
+                  名前
+                  <span class="asterisk">※</span>
+                </p>
+                <input type="text" id="neme" name="name" class="input-area" required>
+              </div>
+            </div>
+            <div class="gender">
+              <p>性別</p>
+              <div class="gender-contents">
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span>男性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female" class="gender-input">
+                  <span>女性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other" class="gender-input">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <p>出身</p>
+              <div class="select-box">
+                <select name="pref" class="input-area">
+                  <option value="Tokyo">東京</option>
+                  <option value="Tiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <p>
+                Eメール
+                <span class="asterisk">※</span>
+              </p>
+              <input type="mail" name="mail" placeholder="ex)hoge@example.com" class="input-area" required>
+            </div>
+            <div>
+              <p>電話番号</p>
+              <input id="phone" type="tel" name="phone" inputmode="tel" placeholder="ex)09012345678" class="input-area">
+            </div>
+            <div>
+              <p>
+                パスワード
+                <span class="asterisk">※</span>
+              </p>
+              <input type="password" name="password" class="input-area" required>
+            </div>
+            <div>
+              <p>
+                パスワード（確認用）
+                <span class="asterisk">※</span>
+              </p>
+              <input type="password" name="password-confirm" class="input-area" required>
+            </div>
+            <div>
+              <p>希望コース</p>
+              <div>
+                <input type="checkbox" name="hope-course" value="frontend" id="frontend">
+                <label for="frontend">フロントエンド</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hope-course" value="backend" id="backend">
+                <label for="backend">バックエンド</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hope-course" value="application" id="application">
+                <label for="application">アプリ</label>
+              </div>
+              <div>
+                <p>備考</p>
+                <textarea name="remarks" placeholder="何かあればご記入ください" class="input-area" ></textarea>
+              </div>
+              <div>
+                <input type="submit" value="アカウント作成">
+              </div>
+            </div>
+
+
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>

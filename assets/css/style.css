@@ -162,3 +162,94 @@
 .resend-mail {
   display: inline-block;
 }
+
+/*-- ここから開始 --*/
+.asterisk {
+  color: red;
+}
+
+.name-box {
+  display: flex;
+}
+
+.input-area {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.name {
+  margin-left: 16px;
+  width: 100%;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+.gender {
+  margin-top: 20px;
+}
+
+.gender-contents {
+  margin-top: 5px;
+  display: flex;
+  font-size: 16px;
+  color: #545654;
+}
+
+.gender-content {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.gender-content:first-child {
+  margin-left: 0;
+}
+
+.gender-content span {
+  display: inline-block;
+  position: relative;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender-input {
+  display: none;
+}
+
+.gender-content span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  background-color: #fbfbfb;
+}
+
+.gender-input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #01bfbd;
+  transform: translateY(-50%);
+}
+
+.select-box {
+  position: relative;
+  margin-top: 8px;
+}
