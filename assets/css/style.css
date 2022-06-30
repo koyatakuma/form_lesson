@@ -164,8 +164,23 @@
 }
 
 /*-- ここから開始 --*/
+
+.row {
+  margin-top: 20px;
+}
+
+.label-text {
+  font-size: 12px;
+  color: #545658;
+}
+
 .asterisk {
   color: red;
+}
+
+.input-init {
+  outline: none;
+  resize: none;
 }
 
 .name-box {
@@ -186,6 +201,12 @@
   border-radius: 3px;
 }
 
+.input-area:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+}
+
 .name {
   margin-left: 16px;
   width: 100%;
@@ -193,10 +214,6 @@
 
 .name:first-child {
   margin-left: 0;
-}
-
-.gender {
-  margin-top: 20px;
 }
 
 .gender-contents {
@@ -251,5 +268,89 @@
 
 .select-box {
   position: relative;
+}
+
+.select-box::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 55%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.select-area {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+.origin-input {
   margin-top: 8px;
 }
+
+.origin-input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: initial;
+}
+
+.course-option {
+  margin-top: 10px;
+}
+
+.course-option:nth-of-type(1) {
+  margin-top: 5px;
+}
+
+.course-checkbox {
+  display: none;
+}
+
+.course-option-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+
+.course-option-text::before {
+  content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    margin-top: -8px;
+    border: 1px solid #d9d9d9;
+}
+
+.course-option input:checked + .course-option-text::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+.remarks-area{
+  height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+  border: 1px solid #01bfbd;
+}
+

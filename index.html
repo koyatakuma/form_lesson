@@ -32,41 +32,41 @@
             -->
             <div class="name-box">
               <div class="name">
-                <p>
+                <p class="label-text">
                   名字
                   <span class="asterisk">※</span>
                 </p>
-                <input type="text" id="last-name" name="last-name" class="input-area" required>
+                <input class="input-area input-init" type="text" id="last-name" name="last-name" required>
               </div>
               <div class="name">
-                <p>
+                <p class="label-text">
                   名前
                   <span class="asterisk">※</span>
                 </p>
-                <input type="text" id="neme" name="name" class="input-area" required>
+                <input class="input-area input-init" type="text" id="neme" name="name" required>
               </div>
             </div>
-            <div class="gender">
-              <p>性別</p>
+            <div class="row gender">
+              <p class="label-text">性別</p>
               <div class="gender-contents">
                 <label class="gender-content">
-                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <input class="gender-input" type="radio" name="gender" value="male">
                   <span>男性</span>
                 </label>
                 <label class="gender-content">
-                  <input type="radio" name="gender" value="female" class="gender-input">
+                  <input class="gender-input" type="radio" name="gender" value="female">
                   <span>女性</span>
                 </label>
                 <label class="gender-content">
-                  <input type="radio" name="gender" value="other" class="gender-input">
+                  <input class="gender-input" type="radio" name="gender" value="other">
                   <span>その他</span>
                 </label>
               </div>
             </div>
-            <div>
-              <p>出身</p>
+            <div class="row is-halfWidth">
+              <p class="label-text">出身</p>
               <div class="select-box">
-                <select name="pref" class="input-area">
+                <select class="input-area select-area input-init origin-input" name="pref">
                   <option value="Tokyo">東京</option>
                   <option value="Tiba">千葉</option>
                   <option value="saitama">埼玉</option>
@@ -74,51 +74,58 @@
                 </select>
               </div>
             </div>
-            <div>
-              <p>
+
+            <div class="row">
+              <p class="row label-text">
                 Eメール
                 <span class="asterisk">※</span>
               </p>
-              <input type="mail" name="mail" placeholder="ex)hoge@example.com" class="input-area" required>
+              <input class="input-area input-init" type="email" name="mail" placeholder="ex) hoge@example.com" required>
             </div>
-            <div>
-              <p>電話番号</p>
-              <input id="phone" type="tel" name="phone" inputmode="tel" placeholder="ex)09012345678" class="input-area">
+
+            <div class="row">
+              <p class="label-text">電話番号</p>
+              <input class="input-area input-init" id="phone" type="tel" name="phone" inputmode="tel" placeholder="ex) 09012345678">
             </div>
-            <div>
-              <p>
+
+            <div class="row">
+              <p class="label-text">
                 パスワード
                 <span class="asterisk">※</span>
               </p>
-              <input type="password" name="password" class="input-area" required>
+              <input class="input-area input-init" type="password" name="password" required>
             </div>
-            <div>
-              <p>
-                パスワード（確認用）
+
+            <div class="row">
+              <p class="label-text">
+                パスワード(確認用)
                 <span class="asterisk">※</span>
               </p>
-              <input type="password" name="password-confirm" class="input-area" required>
+              <input class="input-area input-init" type="password" name="password-confirm" required>
             </div>
-            <div>
-              <p>希望コース</p>
-              <div>
-                <input type="checkbox" name="hope-course" value="frontend" id="frontend">
-                <label for="frontend">フロントエンド</label>
+
+            <div class="row">
+              <p class="label-text">希望コース</p>
+              <div class="course-option">
+                <input class="course-checkbox" type="checkbox" name="hope-course" value="frontend" id="frontend">
+                <label class="course-option-text" for="frontend">フロントエンド</label>
               </div>
-              <div>
-                <input type="checkbox" name="hope-course" value="backend" id="backend">
-                <label for="backend">バックエンド</label>
+              <div class="course-option">
+                <input class="course-checkbox" type="checkbox" name="hope-course" value="backend" id="backend">
+                <label class="course-option-text" for="backend">バックエンド</label>
               </div>
-              <div>
-                <input type="checkbox" name="hope-course" value="application" id="application">
-                <label for="application">アプリ</label>
+              <div class="course-option">
+                <input class="course-checkbox" type="checkbox" name="hope-course" value="application" id="application">
+                <label class="course-option-text" for="application">アプリ</label>
               </div>
-              <div>
-                <p>備考</p>
-                <textarea name="remarks" placeholder="何かあればご記入ください" class="input-area" ></textarea>
+
+              <div class="row remarks">
+                <p class="label-text">備考</p>
+                <textarea class="input-area remarks-area input-init" name="remarks" placeholder="何かあればご記入ください" ></textarea>
               </div>
-              <div>
-                <input type="submit" value="アカウント作成">
+
+              <div class="row">
+                <input class="submit-btn" type="submit" value="アカウント作成">
               </div>
             </div>
 
