@@ -352,5 +352,11 @@
   background-color: #01bfbd;
   color: #fff;
   border: 1px solid #01bfbd;
+  transition: background-color 0.2s linear;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
+  transition: background-color 0.2s linear;
 }
 
