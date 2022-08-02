@@ -358,6 +358,7 @@
 .submit-btn:hover {
   background-color: #01a6a4;
   transition: background-color 0.2s linear;
+  cursor: pointer;
 }
 
 .submit-btn:active {
