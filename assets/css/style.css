@@ -232,7 +232,7 @@
   margin-left: 0;
 }
 
-.gender-content span {
+.gender-mark {
   display: inline-block;
   position: relative;
   padding: 3px 3px 3px 20px;
@@ -242,7 +242,7 @@
   display: none;
 }
 
-.gender-content span::before {
+.gender-mark::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -254,7 +254,7 @@
   background-color: #fbfbfb;
 }
 
-.gender-input:checked + span::after {
+.gender-input:checked + .gender-mark::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -329,7 +329,7 @@
     border: 1px solid #d9d9d9;
 }
 
-.course-option input:checked + .course-option-text::after {
+.course-checkbox:checked + .course-option-text::after {
   content: '';
   position: absolute;
   left: 6px;
